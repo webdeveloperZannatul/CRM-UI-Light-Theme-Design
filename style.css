@@ -178,7 +178,7 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-size: 1.2 rem;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: #1a1916;
   border-bottom: 2px solid transparent;
   transition: color .15s var(--ease), border-color .15s var(--ease);
   white-space: nowrap;
@@ -254,7 +254,7 @@ body {
 
 /* ── Panel ──────────────────────────────────────────────────── */
 .panel {
-  background: #dbdee8;
+  background: #e0e4f2;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 24px;
@@ -268,11 +268,11 @@ body {
 .panel.hidden { display: none; }
 
 .panel-heading {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: 'DM Mono', monospace;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: #2f2e29;
   margin-bottom: 20px;
   padding-bottom: 14px;
   border-bottom: 1px solid var(--border);
