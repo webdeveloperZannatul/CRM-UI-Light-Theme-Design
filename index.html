@@ -9,8 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
-<body>
-
+<body style="background-color: aliceblue;">
   <!-- ── TOP HEADER ─────────────────────────────────────────────────────── -->
   <header class="site-header">
     <div class="header-left">
@@ -20,23 +19,38 @@
     <div class="header-right">
       <!-- KPI chips -->
       <div class="kpi-strip">
-        <div class="kpi-chip kpi-priority">
-          <span class="kpi-label">Priority Score</span>
+        <div class="kpi-strip">
+        <div class="kpi-chip kpi-priority" style="
+    color: yellow;
+    background-color: #f87d7d;
+">
+          <span class="kpi-label" style="
+    color: white;
+">Priority Score</span>
           <span class="kpi-value">87</span>
         </div>
-        <div class="kpi-chip">
+        <div class="kpi-chip" style="
+    background-color: #5572dd;
+">
           <span class="kpi-label">Signals</span>
           <span class="kpi-value">6</span>
         </div>
-        <div class="kpi-chip">
+        <div class="kpi-chip" style="
+    background-color: #b5b595;
+">
           <span class="kpi-label">Opportunities</span>
           <span class="kpi-value">3</span>
         </div>
-        <div class="kpi-chip kpi-alert">
-          <span class="kpi-label">Last Activity</span>
+        <div class="kpi-chip kpi-alert" style="
+    background-color: #8db3d5;
+">
+          <span class="kpi-label" style="
+    color: white;
+">Last Activity</span>
           <span class="kpi-value">8 days</span>
         </div>
       </div>
+        
     </div>
   </header>
 
@@ -54,12 +68,19 @@
     <div class="classify-wrap">
       <label class="classify-label" for="classify-select">Classify lead</label>
       <div class="select-wrapper">
-        <select id="classify-select" class="classify-select">
+        <select id="classify-select" class="classify-select" style="
+          background-color: #91bde7;">
           <option value="call-this-week">Call this week</option>
           <option value="nurture">Nurture</option>
           <option value="disqualify">Disqualify</option>
           <option value="hot-lead">Hot lead</option>
         </select>
+        <!-- <select id="classify-select" class="classify-select">
+          <option value="call-this-week">Call this week</option>
+          <option value="nurture">Nurture</option>
+          <option value="disqualify">Disqualify</option>
+          <option value="hot-lead">Hot lead</option>
+        </select> -->
         <span class="select-arrow">&#8964;</span>
       </div>
     </div>
