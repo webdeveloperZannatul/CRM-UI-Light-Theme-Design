@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICP Nordic Build Group — Lead Detail</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── TOP HEADER ─────────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="header-left">
+      <h1 class="company-name">ICP Nordic Build Group A/S <span class="name-suffix">and a very long company name</span></h1>
+    </div>
+
+    <div class="header-right">
+      <!-- KPI chips -->
+      <div class="kpi-strip">
+        <div class="kpi-chip kpi-priority">
+          <span class="kpi-label">Priority Score</span>
+          <span class="kpi-value">87</span>
+        </div>
+        <div class="kpi-chip">
+          <span class="kpi-label">Signals</span>
+          <span class="kpi-value">6</span>
+        </div>
+        <div class="kpi-chip">
+          <span class="kpi-label">Opportunities</span>
+          <span class="kpi-value">3</span>
+        </div>
+        <div class="kpi-chip kpi-alert">
+          <span class="kpi-label">Last Activity</span>
+          <span class="kpi-value">8 days</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── NAV + CLASSIFY ─────────────────────────────────────────────────── -->
+  <nav class="tab-bar">
+    <div class="tab-list" role="tablist">
+      <button class="tab" role="tab" data-tab="overview">Overview</button>
+      <button class="tab" role="tab" data-tab="signals">Signals</button>
+      <button class="tab" role="tab" data-tab="opportunities">Opportunities</button>
+      <button class="tab tab--active" role="tab" data-tab="activity" aria-selected="true">Activity</button>
+      <button class="tab" role="tab" data-tab="people">People</button>
+      <button class="tab" role="tab" data-tab="company">Company</button>
+    </div>
+
+    <div class="classify-wrap">
+      <label class="classify-label" for="classify-select">Classify lead</label>
+      <div class="select-wrapper">
+        <select id="classify-select" class="classify-select">
+          <option value="call-this-week">Call this week</option>
+          <option value="nurture">Nurture</option>
+          <option value="disqualify">Disqualify</option>
+          <option value="hot-lead">Hot lead</option>
+        </select>
+        <span class="select-arrow">&#8964;</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── MAIN CONTENT ───────────────────────────────────────────────────── -->
+  <main class="main-content" id="main-content">
+
+    <!-- Activity Panel -->
+    <section class="panel" id="tab-activity">
+      <h2 class="panel-heading">Activity</h2>
+
+      <div class="activity-grid">
+
+        <!-- Row 1 ── Current Status / Actions -->
+        <div class="card card--status">
+          <div class="card-header">
+            <span class="card-icon">◈</span>
+            <h3 class="card-title">Current Status</h3>
+          </div>
+          <dl class="status-list">
+            <div class="status-row">
+              <dt>Status</dt>
+              <dd><span class="badge badge--blue">Proposal sent</span></dd>
+            </div>
+            <div class="status-row">
+              <dt>Interest</dt>
+              <dd>
+                <span class="interest-bar">
+                  <span class="interest-fill interest--medium"></span>
+                </span>
+                Medium
+              </dd>
+            </div>
+            <div class="status-row">
+              <dt>Last contact</dt>
+              <dd>8 days ago</dd>
+            </div>
+            <div class="status-row">
+              <dt>Risk</dt>
+              <dd><span class="badge badge--red">No response in 8 days</span></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="card card--actions">
+          <div class="card-header">
+            <span class="card-icon">→</span>
+            <h3 class="card-title">Actions — what to do next</h3>
+          </div>
+          <ul class="action-list">
+            <li class="action-item">
+              <span class="action-num">01</span>
+              <span class="action-text">Follow up with performance angle</span>
+              <button class="action-btn" title="Mark done">✓</button>
+            </li>
+            <li class="action-item">
+              <span class="action-num">02</span>
+              <span class="action-text">Reference hiring signals</span>
+              <button class="action-btn" title="Mark done">✓</button>
+            </li>
+            <li class="action-item">
+              <span class="action-num">03</span>
+              <span class="action-text">Suggest short call instead of full meeting</span>
+              <button class="action-btn" title="Mark done">✓</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Row 2 ── Call Summary / Call Timeline -->
+        <div class="card card--summary">
+          <div class="card-header">
+            <span class="card-icon">☎</span>
+            <h3 class="card-title">Call Summary</h3>
+          </div>
+          <p class="summary-text">
+            Interested after intro call, asked for examples. Follow-up sent.
+            No response after latest attempt.
+          </p>
+        </div>
+
+        <div class="card card--timeline">
+          <div class="card-header">
+            <span class="card-icon">⏱</span>
+            <h3 class="card-title">Call Timeline</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <span class="tl-dot tl-dot--green"></span>
+              <span class="tl-date">12 Mar</span>
+              <span class="tl-arrow">→</span>
+              <span class="tl-desc">Intro call <em>→ interested, asked for examples</em></span>
+            </li>
+            <li class="timeline-item">
+              <span class="tl-dot tl-dot--blue"></span>
+              <span class="tl-date">15 Mar</span>
+              <span class="tl-arrow">→</span>
+              <span class="tl-desc">Follow-up <em>→ sent material</em></span>
+            </li>
+            <li class="timeline-item">
+              <span class="tl-dot tl-dot--red"></span>
+              <span class="tl-date">22 Mar</span>
+              <span class="tl-arrow">→</span>
+              <span class="tl-desc">No response</span>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Row 3 ── Email Summary / Email Timeline -->
+        <div class="card card--summary">
+          <div class="card-header">
+            <span class="card-icon">✉</span>
+            <h3 class="card-title">Email Summary</h3>
+          </div>
+          <p class="summary-text">
+            Sent proposal and follow-up emails. Client showed initial interest
+            but has not replied after receiving detailed material.
+          </p>
+        </div>
+
+        <div class="card card--timeline">
+          <div class="card-header">
+            <span class="card-icon">⏱</span>
+            <h3 class="card-title">Email Timeline</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <span class="tl-dot tl-dot--blue"></span>
+              <span class="tl-date">16 Mar</span>
+              <span class="tl-arrow">→</span>
+              <span class="tl-desc">Proposal sent</span>
+            </li>
+            <li class="timeline-item">
+              <span class="tl-dot tl-dot--blue"></span>
+              <span class="tl-date">18 Mar</span>
+              <span class="tl-arrow">→</span>
+              <span class="tl-desc">Follow-up email</span>
+            </li>
+            <li class="timeline-item">
+              <span class="tl-dot tl-dot--red"></span>
+              <span class="tl-date">22 Mar</span>
+              <span class="tl-arrow">→</span>
+              <span class="tl-desc">No reply</span>
+            </li>
+          </ol>
+        </div>
+
+      </div><!-- /activity-grid -->
+    </section>
+
+    <!-- Placeholder panels for other tabs (hidden by default) -->
+    <section class="panel panel--placeholder hidden" id="tab-overview">
+      <h2 class="panel-heading">Overview</h2>
+      <p class="placeholder-msg">Overview content goes here.</p>
+    </section>
+    <section class="panel panel--placeholder hidden" id="tab-signals">
+      <h2 class="panel-heading">Signals</h2>
+      <p class="placeholder-msg">Signals content goes here.</p>
+    </section>
+    <section class="panel panel--placeholder hidden" id="tab-opportunities">
+      <h2 class="panel-heading">Opportunities</h2>
+      <p class="placeholder-msg">Opportunities content goes here.</p>
+    </section>
+    <section class="panel panel--placeholder hidden" id="tab-people">
+      <h2 class="panel-heading">People</h2>
+      <p class="placeholder-msg">People content goes here.</p>
+    </section>
+    <section class="panel panel--placeholder hidden" id="tab-company">
+      <h2 class="panel-heading">Company</h2>
+      <p class="placeholder-msg">Company content goes here.</p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
